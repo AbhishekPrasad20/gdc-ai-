@@ -252,7 +252,7 @@ void save_weights(const char *fname) {
     fwrite(b3->data, sizeof(float), b3->size, f);
 
     fclose(f);
-    printf("✅ Saved best model to %s\n", fname);
+    printf(" Saved best model to %s\n", fname);
 }
 // ---------------- EVALUATION METRICS ----------------
 typedef struct {
@@ -493,7 +493,7 @@ void train_and_test() {
             best_macro_f1 = current_macro_f1;
             best_test_acc = test_acc;
             wait = 0;
-            save_weights("best_model.bin");   // ✅ save best model
+            save_weights("best_model.bin");   // save best model
         } else {
             wait++;
             if (wait >= patience) {
