@@ -2,6 +2,8 @@
 
 This project implements a machine learning system to classify developers into different roles based on their skills, experience, and project history.
 
+## IIITA GDC Contest Submission
+
 ## Project Structure
 
 - **notebooks/**: Jupyter notebooks for different stages of the project
